@@ -67,7 +67,10 @@ var g_multiviewDepth;     // Depth texture for multiview framebuffer.
 var g_multiviewFbWidth = 0;
 var g_multiviewFbHeight = 0;
 
-var addSharks = true;
+// DO NOT ADD SHARKS WITH LASERS ON THEIR HEAD
+// THIS WILL BE VERY DANGEROUS. SET TO 'false'
+//
+var addSharks = false;
 
 //g_debug = true;
 
