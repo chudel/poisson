@@ -67,6 +67,8 @@ var g_multiviewDepth;     // Depth texture for multiview framebuffer.
 var g_multiviewFbWidth = 0;
 var g_multiviewFbHeight = 0;
 
+var addSharks = true;
+
 //g_debug = true;
 
 var g_tailOffsetMult   = 1;
@@ -1406,6 +1408,7 @@ function initialize() {
               (Math.PI * 2);
           fish.draw(fishPer);
 
+          g.drawLasers = addSharks;
           if (g.drawLasers && fishInfo.lasers) {
             fishInfo.fishData[ii] = {
               position: [
@@ -1437,6 +1440,7 @@ function initialize() {
     }
 
     // Draw Lasers
+    g.drawLasers = addSharks;
     if (g.drawLasers) {
       Log("--Draw Lasers---------------------------------------");
       gl.enable(gl.BLEND);
