@@ -1410,7 +1410,7 @@ function initialize() {
               ((clock + ii * g_tailOffsetMult) * fishTailSpeed * speed) %
               (Math.PI * 2);
           fish.draw(fishPer);
-          console.log("Sharks " + addSharks);
+          console.log("Sharks " + addSharksWithLasers);
           g.drawLasers = addSharksWithLasers;
           if (g.drawLasers && fishInfo.lasers) {
             fishInfo.fishData[ii] = {
