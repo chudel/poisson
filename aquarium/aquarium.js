@@ -70,7 +70,7 @@ var g_multiviewFbHeight = 0;
 // DO NOT ADD SHARKS WITH LASERS ON THEIR HEAD
 // THIS WILL BE VERY DANGEROUS. SET TO 'false'
 //
-var addSharks = false;
+var addSharksWithLasers = false;
 
 //g_debug = true;
 
@@ -1411,7 +1411,7 @@ function initialize() {
               (Math.PI * 2);
           fish.draw(fishPer);
           console.log("Sharks " + addSharks);
-          g.drawLasers = addSharks;
+          g.drawLasers = addSharksWithLasers;
           if (g.drawLasers && fishInfo.lasers) {
             fishInfo.fishData[ii] = {
               position: [
@@ -1443,7 +1443,7 @@ function initialize() {
     }
 
     // Draw Lasers
-    g.drawLasers = addSharks;
+    g.drawLasers = addSharksWithLasers;
     if (g.drawLasers) {
       Log("--Draw Lasers---------------------------------------");
       gl.enable(gl.BLEND);
