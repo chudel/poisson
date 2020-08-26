@@ -70,7 +70,7 @@ var g_multiviewFbHeight = 0;
 // DO NOT ADD SHARKS WITH LASERS ON THEIR HEAD
 // THIS WILL BE VERY DANGEROUS. SET TO 'false'
 //
-var addSharksWithLasers = false;
+var addSharksWithLasers = true;
 
 //g_debug = true;
 
